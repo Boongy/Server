@@ -42,7 +42,7 @@ public class Server extends JFrame {
 	public void startRunning(){
 		try{
 			//limits 100 people to access this port
-			server = new ServerSocket(6789);
+			server = new ServerSocket(portNumber);
 			while(true){
 				try{
 					waitForConnection();
